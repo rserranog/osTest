@@ -2,15 +2,14 @@ package es.juntadeandalucia.chap.osTest;
 
 import java.io.Serializable;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class MainController {
 
-	@Value("${nombre.nodo}")
-	String nombreNodo;
+//	@Value("${nombre.nodo}")
+	String nombreNodo = "Nodo 1";
 	
 	@GetMapping("/hola")
 	public Mensaje holaMundo(){
