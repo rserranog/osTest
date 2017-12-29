@@ -27,7 +27,7 @@ public class MainController {
 		return new Mensaje("hola, soy " + nombreNodo);
 	}
 	
-	@RequestMapping("/error")
+	@GetMapping("/error")
 	public Mensaje error(){
 		return new Mensaje("Ha ocurrido un error");
 	}
